@@ -30,6 +30,7 @@ footer {
         width: 17px;
         height: 17px;
     }
+}
 
     /* User gravatar */
 
@@ -47,14 +48,12 @@ section.user_info {
         letter-spacing: -1px;
         margin-bottom: 3px;
         margin-top: 15px;
-
+        }
     }
+    
 
     .gravatar {
-        float: start;
+        float: left;
         max-width: 50px;
         border-radius: 50%;
-    }
-
-}
-}
+        }
