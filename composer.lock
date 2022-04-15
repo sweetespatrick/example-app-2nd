@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5597a0d4513858625435d84497c0fe53",
+    "content-hash": "e2c7e4a8c59973e72cf8b01f881f954f",
     "packages": [
         {
             "name": "brick/math",
@@ -436,6 +436,58 @@
                 }
             ],
             "time": "2021-10-11T09:18:27+00:00"
+        },
+        {
+            "name": "elfsundae/laravel-gravatar",
+            "version": "2.6.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ElfSundae/laravel-gravatar.git",
+                "reference": "20dac03be34669e7f08b3d0cbb89660687a74fa5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ElfSundae/laravel-gravatar/zipball/20dac03be34669e7f08b3d0cbb89660687a74fa5",
+                "reference": "20dac03be34669e7f08b3d0cbb89660687a74fa5",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "~5.0|~6.0|~7.0|~8.0|~9.0",
+                "php": ">=5.6.4"
+            },
+            "require-dev": {
+                "orchestra/testbench": "~3.0|~4.0|~5.0|~6.0|~7.0",
+                "phpunit/phpunit": "~5.7|~6.0|~7.0|~8.0|~9.0"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "src/helpers.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Elf Sundae",
+                    "email": "elf.sundae@gmail.com",
+                    "homepage": "https://0x123.com"
+                }
+            ],
+            "description": "The easiest way to generate Gravatar avatar URL.",
+            "homepage": "https://github.com/ElfSundae/laravel-gravatar",
+            "keywords": [
+                "gravatar",
+                "helper",
+                "laravel"
+            ],
+            "support": {
+                "issues": "https://github.com/ElfSundae/laravel-gravatar/issues",
+                "source": "https://github.com/ElfSundae/laravel-gravatar/tree/2.6.0"
+            },
+            "time": "2022-02-19T22:42:44+00:00"
         },
         {
             "name": "fruitcake/php-cors",
