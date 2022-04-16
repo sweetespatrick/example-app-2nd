@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\SessionsControler;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -19,3 +20,7 @@ Route::get('/about','StaticPagesController@about')->name('about');
 Route::get('signup','UsersController@create')->name('signup');
 
 Route::resource('users','UsersController');
+
+Route::get('login','SessionsController@create')->name('login');
+Route::post('login','SessionsController@store')->name('store');
+Route::delete('logout','SessionsController@destroy')->name('logout');
