@@ -25,9 +25,7 @@ return [
     |                   to always load, set this value to "y".
     |
     */
-
-    /*
-    'default' => [
+   'default' => [
         'size' => 120,
     ],
 
@@ -38,18 +36,4 @@ return [
     'large' => [
         'size' => 460,
     ],
-    */
-
-    'default' => [
-        'url' => 'https://gravatar.cat.net/avatar',
-        'size' => 120,
-       ],
-       'small' => [
-        'url' => 'https://gravatar.cat.net/avatar',
-        'size' => 40,
-       ],
-       'large' => [
-        'url' => 'https://gravatar.cat.net/avatar',
-        'size' => 460,
-       ],
 ];
