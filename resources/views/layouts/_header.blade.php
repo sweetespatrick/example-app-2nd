@@ -14,7 +14,8 @@
                     <div class="dropdown-menu" aria-labelledby="navDropdown">
                         <a class="dropdown-item" href="{{
                             route('users.show', Auth::user()) }}">个人中心</a>
-                        <a class="dropdown-item" href="#">编辑资料</a>
+                        <a class="dropdown-item" href="{{
+                        route('users.edit',Auth::user())}}">编辑资料</a>
                         <div class="dropdown-divider"></div>
                         <a class="drop-item" id="logout" href="#">
                             <form action="{{ route('logout') }}" method="POST">
@@ -27,7 +28,7 @@
                 </li>
             @else
             <li class="nav-item"><a class="nav-link" href="{{ route('help') }}">帮助</a></li>
-            <li calss="nav-item"><a class="nav-link" href="#">登录</a></li>
+            <li calss="nav-item"><a class="nav-link" href="{{ route('login') }}">登录</a></li>
             @endif
         </ul>
     </div>
