@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\SessionsControler;
+use App\Http\Controllers\SessionsController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -25,3 +25,9 @@ Route::get('login','SessionsController@create')->name('login');
 Route::post('login','SessionsController@store')->name('store');
 Route::delete('logout','SessionsController@destroy')->name('logout');
 Route::get('signup/confirm/{token}','UsersController@confirmEmail')->name('confirm_email');
+
+Route::get('password/reset','PasswordController@showLinkRequestForm')->name('password.request');
+Route::post('password/email','PasswordController@sendResetLinkEmail')->name('password.email');
+
+Route::get('password/reset/{token}','PassWordController@showResetForm')->name('password.reset');
+Route::post('password/reset','PasswordController@reset')->name('password.update');
