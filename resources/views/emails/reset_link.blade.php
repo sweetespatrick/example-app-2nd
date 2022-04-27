@@ -1,4 +1,4 @@
-<doctype html>
+<!doctype html>
 <html>
     <head>
         <meta charset="utf-8">
@@ -10,7 +10,7 @@
 
        <p>
        请点击以下链接进入下一步操作：
-       <a href="{{ route('password.reset',$token) }}>
+       <a href="{{ route('password.reset',$token) }}">
        {{ route('password.reset',$token) }}
        </a>
        </p>
