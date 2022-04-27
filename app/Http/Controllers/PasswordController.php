@@ -66,7 +66,8 @@ class PasswordController extends Controller
         ]);
         $email = $request->email;
         $token = $request->token;
-        $expires = 60*10;
+        $expires = 60 * 10;
+
         $user = User::where("email",$email)->first();
 
         if (is_null($user)) {
@@ -87,7 +88,7 @@ class PasswordController extends Controller
                 return redirect()->back();
             }
 
-            $user->update(['password'=>bcrypt($request->password)]);
+            $user->update(['password' => bcrypt($request->password)]);
 
             session()->flash('success','密码重置成功，请使用新密码登录');
             return redirect()->route('login');
